@@ -1,0 +1,21 @@
+{
+  "name": "mini_projekt_emil_siatka_3i1a",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.11.1"
+  },
+  "description": "Mini Projekt Emil Siatka 3i1a",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^5.3.5",
+    "express": "^4.17.1",
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "EJS",
+  "license": "ISC"
+}
