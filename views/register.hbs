@@ -1,0 +1,39 @@
+<div class="info">
+    <h1>Register page</h1>
+    <div class="formularz">
+        <form method="POST" action="/registering">
+
+            <label for="login">Login:</label>
+            <input type="text" class="input" name="login" id="login">
+            <br />
+            <br />
+            <label for="pass">Password:</label>
+            <input type="password" class="input" name="pass" id="password">
+            <br />
+            <br />
+
+            <label for="wiek">Wiek:</label>
+            <select name="wiek" class="input" id="wiek" required>
+                {{#each lata}}
+                <option value="{{i}}">{{i}}</option>
+                {{/each}}
+            </select>
+            <br />
+            <br />
+            <label for="uczen">Uczeń:</label>
+            <input type="checkbox" class="inputcheck" name="uczen" value="checked">
+            <br />
+            <br />
+
+            <span>Płeć:</span>
+            <label class="inp"><input class="inpu" type="radio" name="plec" value="m">M </label>
+            <label class="inp" ><input class="inpu" type="radio" name="plec" value="k">K </label>
+            
+            <br />
+
+            <button type="submit" class="bt-register">Submit</button>
+
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="menu-admin">
+    <a class="adminbar" href="/sort">Sort</a>
+    <a class="adminbar" href="/gender">Gender</a>
+    <a class="adminbar" href="/show">Show</a>
+</div>
+
+<div class="bodyinfo">
+        <form onchange="this.submit()" class="sort">
+            <label><input type="radio" name="sorting" value="growing">rosnące</label>
+            <label><input type="radio" name="sorting" value="decreasing">malejące</label>
+        </form>
+        <table>
+            {{#each lista}}
+            <tr>
+                <td>ID: {{id}} </td>
+                <td>User: {{login}} - {{pass}} </td>
+                <td>Wiek: {{wiek}} </td>
+            </tr>
+            {{/each}}
+        </table>
+</div>

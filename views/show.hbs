@@ -1,0 +1,19 @@
+<div class="menu-admin">
+    <a class="adminbar" href="/sort">Sort</a>
+    <a class="adminbar" href="/gender">Gender</a>
+    <a class="adminbar" href="/show">Show</a>
+</div>
+
+<body class="bodyinfo">
+    <table>
+        {{#each lista}}
+        <tr>
+            <td>ID: {{id}} </td>
+            <td>User: {{login}} - {{pass}} </td>
+            <td>Uczeń: <input type="checkbox" disabled="disabled" {{uczen}}> </td>
+            <td>Wiek: {{wiek}} </td>
+            <td>Płeć: {{plec}} </td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
